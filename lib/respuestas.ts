@@ -1,5 +1,9 @@
-// Respuestas precomputadas vía Socrata SoQL — Ronda 1 y Ronda 2.
-// Cada item incluye la query SoQL real que se ejecutó para validar.
+// Respuestas precomputadas vía Socrata SoQL.
+//
+// RONDA 1: 24 preguntas en total
+//   - Base de datos 1 (jbjy-vk9h, contratos electrónicos): 12 preguntas
+//   - Base de datos 2 (dmgg-8hin, archivos descarga): 12 preguntas
+// RONDA 2: 18 preguntas sobre el CSV snapshot 2025 (vía Turso)
 
 export interface Respuesta {
   numero: number;
@@ -10,7 +14,7 @@ export interface Respuesta {
   detalle?: string;
 }
 
-export const RONDA_1: Respuesta[] = [
+export const RONDA_1_BD1: Respuesta[] = [
   {
     numero: 3,
     pregunta: "Cantidad total de registros del dataset",
@@ -87,7 +91,7 @@ export const RONDA_1: Respuesta[] = [
   },
 ];
 
-export const RONDA_2_DMGG: Respuesta[] = [
+export const RONDA_1_BD2: Respuesta[] = [
   {
     numero: 15,
     pregunta: "Total de registros del dataset dmgg-8hin",
